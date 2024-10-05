@@ -41,9 +41,9 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - PLAY PAUSE
-  - $$mdi:apple-keyboard-control$$
-  - raise
   - $$mdi:apple-keyboard-option$$
+  - raise
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:keyboard-space$$
   - lower
