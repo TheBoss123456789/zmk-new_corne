@@ -1,10 +1,13 @@
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -49,6 +52,15 @@
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
         tap-ms = <30>;
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        layer3 {
+            bindings = <&mo 3>;
+            key-positions = <41 45>;
+        };
     };
 
     keymap {
