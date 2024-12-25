@@ -54,14 +54,7 @@
         tap-ms = <30>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        layer3 {
-            bindings = <&mo 3>;
-            key-positions = <41 45>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -122,7 +115,7 @@
 &kp TILDE       &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &mmv MOVE_UP     &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_DOWN   &trans     &trans    &trans     &trans    &trans    &trans
 &trans          &out OUT_USB  &out OUT_BLE  &none         &none         &trans          &mmv MOVE_LEFT   &trans     &trans    &trans     &trans    &trans    &trans
-                              &trans        &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans     &trans    &trans
+                              &trans        &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans     &mo 3     &trans
                                                                                         &mkp LCLK
             >;
 
